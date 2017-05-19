@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>Find the date!</title>
+	<link rel="stylesheet" href="../../style.css" type="text/css"/>
+	<script type="text/javascript" src="map-events.js"></script>
+	<script type="text/javascript" src="map-date.js"></script>
+
+	<style type="text/css">
+	.button{
+		background-color: #C7CBCD;
+		border: none;
+		font-size: 16px;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	.button:hover {
+		opacity:0.75;
+	}
+	</style>
+</head>
+<body>
+	<br />
+	<br />
+	<div id="contain">
+		<br />
+		<br />
+		<div id="date-options">
+			<h2>
+				<div id="date-question">Does England exist?</div>
+			</h2>
+			<p>
+				<div id="date-answers">
+					<button class="button" id="yes-answer" type="button" onclick="answer('yes')">Duh. </button> &nbsp;&nbsp;
+					<button class="button" id="no-answer" type="button" onclick="answer('no')">No. </button> &nbsp;&nbsp;
+					<button class="button" id="na-answer" type="button" onclick="answer(null)">Can't tell/Neither </button>
+				</div>
+			</p>
+		</div>
+		
+		<br />
+		<hr><br />
+		
+		<div id="map-range">
+			The map is from the time period: 
+			<ul id="date-ranges">
+				Anytime in the history of mankind.
+			</ul>
+		</div>
+
+		<br /><hr><br />
+
+		<div id="reset-system">
+			<p>
+				<button class="button" id="reset" type="button" onclick="reset()">RESET</button>
+			</p>
+			<br />
+			<p>
+				<a href="../../more/blog.html#5">[+] Read More</a>
+			</p>
+		</div>
+
+		<br />
+		<br />
+		<br />
+	</div>
+
+	<script type="text/javascript">updateOptions();</script>
+</body>
+</html>
